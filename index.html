@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mossy Woods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+
+      <!-- Background -->
+      <div class="bg-layer">
+        <div class="bg-particles" id="particles"></div>
+        <div class="bg-vignette"></div>
+        <div class="bg-light-ray"></div>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Slide-in Nav -->
+      <nav class="nav-panel" id="navPanel">
+        <ul>
+          <li><a href="#" data-page="home" class="active">Home</a></li>
+          <li><a href="#" data-page="factions">Faction Tracker</a></li>
+          <li><a href="#" data-page="lore">World Lore</a></li>
+          <li><a href="#" data-page="wiki">Wiki</a></li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+
+      <!-- Pages -->
+      <main class="pages">
+        <section class="page active" id="page-home">
+          <div class="hand-bar" id="handBar">
+            <!-- Cards injected by JS -->
+          </div>
+        </section>
+        <section class="page" id="page-factions"></section>
+        <section class="page" id="page-lore"></section>
+        <section class="page" id="page-wiki"></section>
+      </main>
+
+      <!-- Card Modal -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card" id="modalCard">
+          <button class="modal-close" id="modalClose">✕</button>
+          <div class="modal-content" id="modalContent"></div>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

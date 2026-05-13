@@ -1,0 +1,146 @@
+{
+  "truths": [
+    {
+      "id": "the_heartland",
+      "category": "The Heartland",
+      "description": "How present is the Empire's shadow from its core?",
+      "options": [
+        { "id": "heartland_a", "label": "The Eternal Pretense", "text": "The Empire still sends governors, still mints coins, still writes laws. But the governors are corrupt or incompetent, the coins are debased, and the laws are ignored. It functions just enough to remind you it's dying." },
+        { "id": "heartland_b", "label": "The Fractured Mirror", "text": "Scouts and messengers do return, sometimes. But what they bring back conflicts wildly -- one reports the capital besieged, another says it thrives under a new emperor, a third came back speaking of famine and burning fields. Nobody can agree on what is true, and the reports are old by the time they arrive. So the provincial administration made a pragmatic decision: close the formal border, garrison it, declare the situation under observation. Trade still moves through, because it has to, because people need to eat and coins need to circulate. But it moves through checkpoints, under scrutiny, with tariffs that line local pockets more than imperial ones. The border is real enough to be bureaucratic and porous enough to be useless. The Empire is both there and not there, and nobody in power locally wants to be the one to officially say which." },
+        { "id": "heartland_c", "label": "The Hungry Ghost", "text": "The Empire is visibly collapsing but lashing out. Tax collectors arrive with soldiers. Edicts come that make no sense for local conditions. It is most dangerous precisely because it is desperate." }
+      ]
+    },
+    {
+      "id": "the_collapse",
+      "category": "The Collapse",
+      "description": "What cracked the foundation?",
+      "options": [
+        { "id": "collapse_a", "label": "The Slow Rot", "text": "No single cause. Corruption, overreach, bad harvests, small wars that never stopped. The Collapse wasn't an event, it was a realization. One day people looked around and understood it was already over." },
+        { "id": "collapse_b", "label": "The Wound That Didn't Close", "text": "A specific catastrophe -- plague, a lost war, a succession crisis -- struck and the Empire simply never recovered. Everyone alive remembers it, or remembers their parents remembering it." },
+        { "id": "collapse_c", "label": "The Cost of Winning", "text": "The Empire won too much. A generation of near-total conquest drained the treasury, emptied the farms of able bodies, and stretched every supply line to snapping. The Collapse wasn't defeat -- it was the bill arriving for all those victories. The Provinces remember sending sons and grain and coin to feed a war machine that never stopped, and getting back only silence and tax collectors." }
+      ]
+    },
+    {
+      "id": "the_provinces",
+      "category": "The Provinces",
+      "description": "What is the shape of the land and how does it feel to live here?",
+      "options": [
+        { "id": "provinces_a", "label": "The Patchwork", "text": "The Provinces were never one thing. Coast, highland, dry plateau, river valley, islands just far enough to feel foreign. The Empire stitched it together with roads and taxes and a shared language that everyone speaks with a different accent. Now the stitching is loose. Each region does things its own way, trades with its neighbors when it suits them, and regards the next valley with equal parts familiarity and suspicion." },
+        { "id": "provinces_b", "label": "The Quiet Recovery", "text": "The worst is over. Villages that were abandoned are being resettled. Old orchards are being replanted. People are cautious, still scarred, but there is genuine hope threading through the hardship. The land is generous if you work it right and the communities that survived the Collapse came out knowing exactly what matters." },
+        { "id": "provinces_c", "label": "The Hollow Roads", "text": "The Imperial infrastructure is still there -- roads, aqueducts, bridges, waystation ruins -- but it's decaying and nobody has the resources or authority to maintain it properly. Travel is possible but unreliable. The roads connect places that no longer need each other the way the Empire planned. People have found new paths, new trades, new loyalties that the old maps don't show." }
+      ]
+    },
+    {
+      "id": "communities",
+      "category": "Communities",
+      "description": "How do people organize in the absence of imperial structure?",
+      "options": [
+        { "id": "communities_a", "label": "The Village is Everything", "text": "The meaningful unit of society is the village. Not the region, not the province, not any lord's domain. The village council, the village elder, the village healer. Outsiders are welcome enough but always slightly guests. Loyalty runs hyperlocal and that's not a flaw, that's how people survived." },
+        { "id": "communities_b", "label": "The Strong House", "text": "Powerful families have stepped into the vacuum. Not quite nobility, not quite warlords -- more like the family that owns the mill, the family that controls the river crossing, the family whose grandmother everyone is slightly afraid of. Politics is personal and genealogical. Who your people are matters enormously." },
+        { "id": "communities_c", "label": "The Circuit", "text": "Communities are less fixed than they look. Seasonal migrations, traveling markets, itinerant specialists who move between settlements. The herbalist who winters in one village and summers in another. The traders whose routes are their home. Settlements exist but the connective tissue between them is just as alive." }
+      ]
+    },
+    {
+      "id": "the_vows",
+      "category": "The Vows",
+      "description": "Why do oaths carry weight in this world?",
+      "options": [
+        { "id": "vows_a", "label": "The Old Contract", "text": "Vows predate the Empire and will outlast it. They are older than any faith, older than any law. When you swear on iron, on salt, on your blood or your name, something in the fabric of things takes notice. Nobody can explain it theologically. It simply is. Breaking a vow doesn't just damage your reputation. People say you can see it in a oathbreaker's eyes afterward." },
+        { "id": "vows_b", "label": "All That's Left", "text": "Imperial law is distant and unreliable. The faith is fragmented. What holds communities together now is the word given and kept. Vows are social infrastructure. A broken oath here doesn't invoke anything supernatural, but it makes you an exile as surely as any sentence. Trust is the only currency that still holds its value." },
+        { "id": "vows_c", "label": "The Witnessed Word", "text": "A vow only fully binds when witnessed correctly -- by the right person, in the right place, with the right words. There are those who specialize in this. Witnesses, oath-keepers, people whose role in the community is to hold the memory of what was promised and to whom. Losing your witness is a serious problem. Finding a trustworthy one is worth a favor." }
+      ]
+    },
+    {
+      "id": "faith",
+      "category": "Faith",
+      "description": "What fills the spiritual vacuum the Empire left behind?",
+      "options": [
+        { "id": "faith_a", "label": "The Church Holds", "text": "There is one dominant faith, Imperial in origin, and it is the single institution that still functions across the Provinces with any consistency. Its priests are sometimes the only literate people in a village, its churches the sturdiest buildings. It is bureaucratic, political, occasionally corrupt, and genuinely comforting to millions. People have complicated feelings about it." },
+        { "id": "faith_b", "label": "The Old and the New", "text": "The Imperial faith never fully replaced what came before. In the Provinces especially, old shrines sit at crossroads, old names are whispered for old things, old calendars mark old feast days. People layer belief practically -- church on the official days, the old prayers when the harvest is bad or a child is sick. The priests pretend not to notice. Mostly." },
+        { "id": "faith_c", "label": "The Fracture", "text": "The Imperial faith split. Nobody agrees exactly when or why but there are now at least two major branches and a constellation of smaller ones, each convinced the others are heretical. The Provinces are a patchwork of confessions. This is sometimes merely awkward and sometimes genuinely dangerous." }
+      ]
+    },
+    {
+      "id": "the_wilds",
+      "category": "The Wilds",
+      "description": "What lives in the places people don't go?",
+      "options": [
+        { "id": "wilds_a", "label": "Nature, Indifferent", "text": "The forests and highlands and deep marshes are dangerous the way weather is dangerous. Wolves, wild boar, harsh winters, getting lost. The wilds don't hate you. They simply don't care about you at all. That's frightening enough." },
+        { "id": "wilds_b", "label": "The Old Remains", "text": "Ruins, mostly. The Empire built everywhere and abandoned a lot of it. There are roads that lead to nothing, villas slowly being eaten by vines, the bones of aqueducts. Occasionally people shelter in them, occasionally things shelter in them. The past is physically present in the landscape in ways that are sometimes useful and sometimes deeply unsettling." },
+        { "id": "wilds_c", "label": "Something Watches", "text": "Not malevolent necessarily. But aware. Travelers report being followed without ever seeing what follows. Offerings left at old stones disappear. Animals behave strangely near certain places. Whether this is folklore, magic, or something genuinely other is a question the Provinces haven't answered and mostly prefer not to ask." }
+      ]
+    },
+    {
+      "id": "historical_empire_height",
+      "category": "Historical: The Empire at its Height",
+      "description": "What was the Empire actually like when it was working?",
+      "historical": true,
+      "options": [
+        { "id": "height_a", "label": "The Genuine Article", "text": "It was, for a time, genuinely good. Roads that connected everything, laws that protected the weak as often as the strong, a civilization that produced beauty and knowledge and relative peace across an enormous territory. Its fall is a tragedy not because it was perfect but because it was real. People who remember it, or whose grandparents remembered it, grieve something true." },
+        { "id": "height_b", "label": "The Comfortable Lie", "text": "It was good if you were the right kind of person in the right kind of place. For everyone else it was taxation, conscription, cultural erasure, and the slow replacement of everything local with everything imperial. The nostalgia people feel for the Empire is real but it's nostalgia for stability, not justice. The Provinces were always an afterthought." },
+        { "id": "height_c", "label": "The Long Performance", "text": "It was never as unified or as powerful as it claimed. The Empire was always partly theatrical -- the roads and the coins and the eagles on every official building were as much propaganda as infrastructure. It held together because enough people believed it would, and when enough people stopped believing, there was less underneath than anyone expected." }
+      ]
+    },
+    {
+      "id": "historical_beginning_end",
+      "category": "Historical: The Beginning of the End",
+      "description": "What planted the seed, long before anyone called it a collapse?",
+      "historical": true,
+      "options": [
+        { "id": "beginning_a", "label": "The Empire Ate Itself", "text": "Centuries of internal corruption, of offices bought and sold, of generals who cared more about succession than defense, of provinces milked dry to fund a center that grew fat and paranoid. The end was written into the structure from very early on. Anyone who looked carefully could see it. Most people preferred not to look." },
+        { "id": "beginning_b", "label": "One Unhealed Wound", "text": "There was a specific moment -- a lost war, a plague that took the wrong people, a succession crisis that split loyalties at exactly the wrong time. The Empire survived it officially but never recovered functionally. Everything after was the long aftermath of one thing that should have been recoverable and wasn't. Scholars argue about which moment. Most people point to different ones." },
+        { "id": "beginning_c", "label": "The Border Stopped Holding", "text": "The Empire's strength was always its ability to project force to its edges. When that became too expensive, too logistically impossible, the edges started making their own arrangements. Not invasions, not dramatic falls, just a slow negotiation where the Provinces stopped waiting for imperial answers and started finding local ones. The center didn't fall. It just became increasingly irrelevant to people who had stopped needing it." }
+      ]
+    },
+    {
+      "id": "historical_old_magic",
+      "category": "Historical: The Old Magic",
+      "description": "Where did magic come from and what was its relationship with the Empire?",
+      "historical": true,
+      "options": [
+        { "id": "oldmagic_a", "label": "It Was Always Here", "text": "Magic is older than the Empire by an unknowable margin. It exists in the land, in certain bloodlines, in practices that predate every written record. The Empire didn't create it and couldn't destroy it. What it could do, and did, was regulate it, tax it, conscript it, and when that failed, persecute it. The magic that survived imperial attention is the magic that learned to be quiet." },
+        { "id": "oldmagic_b", "label": "The Empire Made It Legible", "text": "Magic existed before but the Empire systematized it. Imperial scholars catalogued it, institutions trained practitioners, the state used it as infrastructure the same way it used aqueducts. What the Provinces have now are fragments of that system, half-understood techniques, institutional memory without the institution. Some of it still works. Nobody is entirely sure why." },
+        { "id": "oldmagic_c", "label": "It Came Back", "text": "There are those who argue magic was genuinely suppressed for a long time, that the Empire's rational infrastructure was partly a magical working in itself, imposing order on older chaos. As that infrastructure decays the older currents are returning, not invented, not rediscovered, just no longer held back. People with the sensitivity to feel it say the air has been different for a generation now." }
+      ]
+    },
+    {
+      "id": "historical_great_catastrophe",
+      "category": "Historical: The Great Catastrophe",
+      "description": "What single event do people mean when they lower their voices?",
+      "historical": true,
+      "options": [
+        { "id": "catastrophe_a", "label": "The Burning of the Archives", "text": "Somewhere in the Heartland, during the chaos of the Collapse, the great repositories of imperial knowledge burned. Nobody agrees if it was accident, war, or deliberate. What is agreed is that knowledge was lost that cannot be recovered -- medical, architectural, agricultural, magical. The Provinces are poorer and more ignorant than they should be and they know it. Some things people are still trying to reconstruct from fragments and memory." },
+        { "id": "catastrophe_b", "label": "The Generation That Didn't Come Home", "text": "A war, or a series of them, took an entire generation of young people from the Provinces and returned almost none of them. The demographic wound is still visible -- too many grandparents, not enough parents, children raised by exhausted elders. Communities restructured around absence. The shape of that loss is in everything, in who leads, in who does which work, in which villages thrived and which quietly emptied." },
+        { "id": "catastrophe_c", "label": "The Season That Killed", "text": "A catastrophic harvest failure, compounded by plague or flood or both, within living memory. The survivors remember it with a specificity that marks them -- what they ate, who they lost, which decisions saved or doomed a household. It reorganized social hierarchies completely. Families that shared food are bound together still. Families that didn't are not forgotten or forgiven." }
+      ]
+    },
+    {
+      "id": "historical_what_was_lost",
+      "category": "Historical: What Was Lost",
+      "description": "What is gone that cannot be recovered, and does anyone still look for it?",
+      "historical": true,
+      "options": [
+        { "id": "lost_a", "label": "The Language", "text": "The true administrative language of the Empire, distinct from the common tongue, carried a precision and a legal weight that the vernacular cannot replicate. Old contracts, old deeds, old texts are increasingly unreadable to all but a handful of scholars. What's written in it cannot be fully translated, only approximated. Some of what's lost is practical. Some of it, people suspect, is something more." },
+        { "id": "lost_b", "label": "The Roads Between", "text": "Not the physical roads, those are still there, crumbling but walkable. What's lost is the network -- the relay stations, the messengers, the shared maps, the knowledge of safe passage. The Provinces are full of people who have never been more than a day's walk from where they were born because nobody knows reliably what lies beyond that. The world has gotten very small. Some people are trying to make it larger again." },
+        { "id": "lost_c", "label": "A Person, or a Line", "text": "There was someone, or a family, or an institution, whose role was to hold something specific together -- a peace, a treaty, a tradition, a magical working, a political balance. They are gone now, and what they held is slowly coming apart in ways that are only becoming visible. Nobody is sure if finding a successor is possible. Nobody is sure what happens if it isn't." }
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "id": "patch_heartland_c_provinces_b",
+      "conditions": ["heartland_c", "provinces_b"],
+      "text": "The recovery is real but it has an edge to it. People are rebuilding, replanting, finding their footing -- and watching the horizon for tax collectors. Prosperity here is quietly kept. Granaries are underreported. Thriving villages learn to look merely adequate. The resentment this breeds is slow and deep, the kind that doesn't forget."
+    },
+    {
+      "id": "patch_faith_c_heartland_b",
+      "conditions": ["faith_c", "heartland_b"],
+      "text": "Nobody is sure if the faith fractured because the Heartland went silent or if the Heartland went silent partly because the faith fractured. The Provinces have stopped trying to untangle it. What's here is here -- competing confessions, local compromises, the occasional traveling zealot from one branch or another claiming authority nobody is sure they have. The factions are real. The chaos is managed, barely, by the fact that everyone is too tired and too busy to properly fight about it yet."
+    },
+    {
+      "id": "patch_vows_a_faith_a",
+      "conditions": ["vows_a", "faith_a"],
+      "text": "The Church has an official position on oaths: they are sacred, witnessed by the divine, and administered properly only through its clergy. The Church also quietly knows that oaths sworn on salt and iron in the old way hold in a manner that no theological framework fully explains. Some priests ignore this. Some incorporate it. A few have built entire local theologies around reconciling the two. The old contract predates the Church and the Church knows it, even if it won't say so from the pulpit."
+    }
+  ]
+}
