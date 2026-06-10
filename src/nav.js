@@ -17,7 +17,9 @@ export function initNav() {
       links.forEach(l => l.classList.remove('active'))
       link.classList.add('active')
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
-      document.getElementById(`page-${page}`).classList.add('active')
+      const el = document.getElementById(`page-${page}`)
+      el.classList.add('active')
+      if (el) el.scrollTop = 0
       closeNav()
     })
   })

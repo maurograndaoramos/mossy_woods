@@ -1,25 +1,17 @@
 export function initParticles() {
-  const container = document.getElementById('particles')
-  const count = 28
+  const host = document.getElementById('particles')
+  const count = 18
 
   for (let i = 0; i < count; i++) {
     const p = document.createElement('div')
     p.className = 'particle'
-    const x = Math.random() * 100
-    const duration = 12 + Math.random() * 20
-    const delay = Math.random() * -30
-    const drift = (Math.random() - 0.5) * 80
-
-    p.style.cssText = `
-      left: ${x}%;
-      bottom: ${Math.random() * 30}%;
-      animation-duration: ${duration}s;
-      animation-delay: ${delay}s;
-      --drift: ${drift}px;
-      opacity: ${0.3 + Math.random() * 0.5};
-      width: ${1 + Math.random() * 2}px;
-      height: ${1 + Math.random() * 2}px;
-    `
-    container.appendChild(p)
+    p.style.left = `${Math.random() * 100}%`
+    p.style.bottom = `${-10 - Math.random() * 20}px`
+    p.style.setProperty('--dx', `${(Math.random() - 0.5) * 80}px`)
+    const dur = 12 + Math.random() * 14
+    p.style.animationDuration = `${dur}s`
+    p.style.animationDelay = `${Math.random() * dur}s`
+    p.style.opacity = (0.3 + Math.random() * 0.5).toString()
+    host.appendChild(p)
   }
 }
