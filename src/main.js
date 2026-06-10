@@ -1,6 +1,7 @@
 import './style.css'
 import { initParticles } from './particles.js'
 import { initNav } from './nav.js'
+import { initEditMode } from './editmode.js'
 import { initHome } from './home.js'
 import { initVows } from './vows.js'
 import { initMoves } from './moves.js'
@@ -40,6 +41,7 @@ initStars()
 initParticles()
 initNav()
 initModal()
+initEditMode()
 initHome()
 initVows()
 initMoves()

@@ -1,3 +1,5 @@
+import { getApiKey } from './editmode.js'
+
 const BASE_URL = import.meta.env.VITE_API_URL
 
 const STUB = {
@@ -155,6 +157,54 @@ export async function getWiki() {
   if (!BASE_URL) return STUB.wiki
   return apiFetch('/wiki')
 }
+
+// ── Write helpers ────────────────────────────────────────────
+async function apiWrite(method, path, body = null) {
+  const res = await fetch(`${BASE_URL}${path}`, {
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+      'X-API-Key': getApiKey(),
+    },
+    ...(body !== null ? { body: JSON.stringify(body) } : {}),
+  })
+  if (!res.ok) throw new Error(`API ${path} returned ${res.status}`)
+  if (method === 'DELETE') return { ok: true }
+  return res.json()
+}
+
+// Sheet
+export const patchCharacter  = (b)     => apiWrite('PATCH', '/sheet/character', b)
+export const patchStat       = (name, b) => apiWrite('PATCH', `/sheet/stats/${encodeURIComponent(name)}`, b)
+export const patchMeter      = (key, b)  => apiWrite('PATCH', `/sheet/meters/${key}`, b)
+export const patchQuest      = (b)     => apiWrite('PATCH', '/sheet/quest', b)
+export const postHandAsset   = (b)     => apiWrite('POST',  '/sheet/hand', b)
+export const patchHandAsset  = (id, b) => apiWrite('PATCH', `/sheet/hand/${id}`, b)
+export const deleteHandAsset = (id)    => apiWrite('DELETE',`/sheet/hand/${id}`)
+
+// Vows
+export const postVow         = (b)     => apiWrite('POST',  '/vows', b)
+export const patchVow        = (id, b) => apiWrite('PATCH', `/vows/${id}`, b)
+export const deleteVow       = (id)    => apiWrite('DELETE',`/vows/${id}`)
+export const postJourney     = (b)     => apiWrite('POST',  '/vows/journeys', b)
+export const patchJourney    = (id, b) => apiWrite('PATCH', `/vows/journeys/${id}`, b)
+export const deleteJourney   = (id)    => apiWrite('DELETE',`/vows/journeys/${id}`)
+export const postBond        = (b)     => apiWrite('POST',  '/vows/bonds', b)
+export const patchBond       = (id, b) => apiWrite('PATCH', `/vows/bonds/${id}`, b)
+export const deleteBond      = (id)    => apiWrite('DELETE',`/vows/bonds/${id}`)
+
+// Lore
+export const postLore        = (b)     => apiWrite('POST',  '/lore', b)
+export const patchLore       = (id, b) => apiWrite('PATCH', `/lore/${id}`, b)
+export const deleteLore      = (id)    => apiWrite('DELETE',`/lore/${id}`)
+
+// Wiki
+export const postWiki        = (b)     => apiWrite('POST',  '/wiki', b)
+export const patchWiki       = (id, b) => apiWrite('PATCH', `/wiki/${id}`, b)
+export const deleteWiki      = (id)    => apiWrite('DELETE',`/wiki/${id}`)
+
+// Calendar
+export const patchCalendar   = (b)     => apiWrite('PATCH', '/calendar', b)
 
 export async function selectTruths(token, lore) {
   if (!BASE_URL) return

@@ -1436,3 +1436,233 @@ button { font: inherit; color: inherit; }
   color: var(--mist);
   padding-top: 0.5rem;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   EDIT MODE
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Edit mode indicator — subtle amber glow on the hamburger */
+body.edit-mode .hamburger span { background: var(--honey); }
+
+/* Hidden toggle in nav footer */
+.edit-mode-toggle {
+  display: block;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--mist-dim);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+  opacity: 0.4;
+}
+.edit-mode-toggle:hover { opacity: 1; color: var(--moonlight); border-color: var(--moon-dim); }
+.edit-mode-toggle.active { color: var(--honey); border-color: var(--honey); opacity: 0.85; }
+
+/* Pen buttons — hidden by default, shown in edit mode */
+.edit-pen {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--mist-dim);
+  font-size: 0.8rem;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  vertical-align: middle;
+  opacity: 0.5;
+  transition: opacity 0.15s, color 0.15s;
+}
+body.edit-mode .edit-pen { display: inline-block; }
+.edit-pen:hover { opacity: 1; color: var(--moonlight); }
+
+/* Orbs / values that are clickable in edit mode */
+.editable-orb { cursor: pointer; }
+body.edit-mode .editable-orb:hover {
+  outline: 1px dashed var(--honey);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Add / delete buttons */
+.edit-add-btn {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px dashed var(--line-strong);
+  border-radius: 4px;
+  color: var(--mist);
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0.5rem 0;
+}
+.edit-add-btn:hover { color: var(--moonlight); border-color: var(--moon-dim); }
+
+.edit-delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--mist-dim);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0.1rem 0.3rem;
+  float: right;
+  opacity: 0.45;
+  transition: opacity 0.15s, color 0.15s;
+}
+.edit-delete-btn:hover { opacity: 1; color: var(--rose); }
+
+/* Inline text inputs */
+.edit-inline-input {
+  font-family: var(--font-body);
+  font-size: inherit;
+  color: var(--paper);
+  background: rgba(216, 200, 154, 0.06);
+  border: 1px solid var(--honey);
+  border-radius: 3px;
+  padding: 0.15rem 0.4rem;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+}
+.edit-inline-input:focus { background: rgba(216, 200, 154, 0.1); }
+.edit-inline-textarea {
+  resize: vertical;
+  min-height: 4rem;
+  display: block;
+}
+select.edit-inline-input { width: auto; cursor: pointer; }
+
+/* Quest rank row */
+.quest-rank-row { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem; }
+
+/* Wiki category select in reader */
+.edit-cat-select { font-size: 0.7rem; padding: 1px 4px; margin-left: 0.5rem; }
+
+/* Wiki tag delete */
+.wiki-tag { position: relative; display: inline-flex; align-items: center; gap: 0.3rem; }
+.wiki-tag-del {
+  background: transparent; border: none;
+  color: var(--mist-dim); font-size: 0.65rem;
+  cursor: pointer; padding: 0 0.1rem;
+  opacity: 0.5; transition: opacity 0.15s;
+}
+.wiki-tag-del:hover { opacity: 1; color: var(--rose); }
+
+/* Modal edit zone */
+.modal-edit-zone {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+.modal-edit-label {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mist-dim);
+  margin-bottom: 0.5rem;
+}
+.modal-json-edit {
+  width: 100%;
+  font-family: monospace;
+  font-size: 0.78rem;
+  color: var(--paper);
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.6rem;
+  resize: vertical;
+  outline: none;
+}
+.modal-json-edit:focus { border-color: var(--honey); }
+.modal-edit-actions { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+.modal-edit-error { color: var(--rose); font-size: 0.8rem; margin-top: 0.4rem; min-height: 1rem; }
+
+/* Ability toggle button */
+.ab-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--mist-dim);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 1px 6px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.ab-toggle-btn:hover { color: var(--moonlight); border-color: var(--moon-dim); }
+
+/* Edit key modal */
+#editKeyModal {
+  position: fixed; inset: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem;
+}
+.ekm-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(10, 14, 26, 0.7);
+  backdrop-filter: blur(6px);
+}
+.ekm-box {
+  position: relative;
+  background: linear-gradient(180deg, #232a47 0%, #1c2138 100%);
+  border: 1px solid var(--moon-dim);
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+  width: min(360px, 100%);
+  display: flex; flex-direction: column; gap: 0.75rem;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+.ekm-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  color: var(--moon-pale);
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+.ekm-note {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--mist);
+  text-align: center;
+}
+.ekm-input {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--paper);
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  padding: 0.55rem 0.8rem;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.ekm-input:focus { border-color: var(--honey); }
+.ekm-btn {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  text-align: center;
+}
+.ekm-primary { background: var(--moonlight); color: var(--ink-deep); font-weight: 600; }
+.ekm-primary:hover { background: var(--moon-pale); }
+.ekm-danger { background: transparent; border-color: var(--rose); color: var(--rose); }
+.ekm-danger:hover { background: rgba(213, 168, 168, 0.1); }
+.ekm-ghost { background: transparent; border-color: var(--line); color: var(--mist); }
+.ekm-ghost:hover { color: var(--moon-pale); border-color: var(--moon-dim); }
